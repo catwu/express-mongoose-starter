@@ -14,8 +14,8 @@ module.exports = function (app) {
   //=============================
   // Bookmark
   //=============================
-  // var person = require('../app/controllers/person');
-  // app.get('/person/', person.index);
+  var person = require('../app/controllers/person');
+  app.get('/person', person.index);
   // app.get('/person/:id', person.show);
   // app.post('/person/', person.create);
   // app.put('/person/:id', person.update);

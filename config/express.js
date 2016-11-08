@@ -4,7 +4,7 @@ var exphbs  = require('express-handlebars'),
   config = require('./config')[env];
 
 var hbs = exphbs.create({
-  layout: 'layout'
+  defaultLayout: 'layout'
 });
 
 module.exports = function(app) {
