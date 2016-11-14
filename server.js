@@ -4,6 +4,7 @@ var env = process.env.NODE_ENV || 'development',
   config = require('./config/config')[env],
   mongoose = require('mongoose');
 
+console.log("Connecting to: ", config.db);
 // Bootstrap database
 mongoose.connect(config.db);
 
