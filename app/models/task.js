@@ -96,7 +96,7 @@ module.exports = {
 /** 
 *save the tasks
 */
-
+console.log("saving new task");
  Task1.save(function(err) {
    if (err) throw err;
   
