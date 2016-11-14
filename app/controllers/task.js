@@ -9,7 +9,7 @@ function showTasks(req, res){
     console.log('There are ' + tasks.length + " tasks in our database");
     console.log(tasks);
    // res.send('I succesfully ran showTasks and found '+ tasks.length + 'tasks in the databasedb.');
-    res.send(tasks);
+    res.render('tasks', {description: tasks[0].task_description});
   });
 }
 
