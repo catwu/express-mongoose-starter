@@ -13,14 +13,4 @@ module.exports = function (app) {
 
   app.post('/tasks', taskControllers.createnumber);
   
-
-  //=============================
-  // Bookmark
-  //=============================
-  var person = require('../app/controllers/person');
-  app.get('/person', person.index);
-  // app.get('/person/:id', person.show);
-  // app.post('/person/', person.create);
-  // app.put('/person/:id', person.update);
-  // app.del('/person/:id', person.delete);
 };
