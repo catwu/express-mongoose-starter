@@ -1,5 +1,8 @@
 <h2>{{description}}</h2>
 <p>This should pull in daily tasks!</p>
-<div class="button">
-    <button type="button">I did it!</button>
-</div>
+<form method="POST">
+    <input type="hidden" name="task_id" value="{{task_id}}">
+    <div class="button">
+        <button type="submit">I did it!</button>
+    </div>
+</form>

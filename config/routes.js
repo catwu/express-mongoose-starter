@@ -7,9 +7,12 @@ module.exports = function (app) {
   //=============================
   var taskControllers = require('../app/controllers/task');
   app.get('/', function(req, res) {
-    res.send('woot kyle is here');
+    res.render('home');
   });
   app.get('/tasks', taskControllers.showTasks);
+
+  app.post('/tasks', taskControllers.createnumber);
+  
 
   //=============================
   // Bookmark
