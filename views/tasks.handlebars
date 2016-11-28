@@ -2,7 +2,13 @@
 <p>{{description}}</p>
 <form method="POST">
     <input type="hidden" name="task_id" value="{{task_id}}">
-    <div class="button">
-        <button type="submit">I did it!</button>
-    </div>
+    {{#if taskIsDone}}
+        <div>
+            YOU DID IT!
+        </div>
+    {{else}}
+        <div class="button">
+            <button type="submit">I did it!</button>
+        </div>
+    {{/if}}
 </form>
