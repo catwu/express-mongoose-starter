@@ -10,7 +10,10 @@ module.exports = function (app) {
     res.render('home');
   });
   app.get('/tasks', taskControllers.showTasks);
-
   app.post('/tasks', taskControllers.createnumber);
+  
+  app.get('/progress', function(req, res) {
+    res.render('progress');
+  });
   
 };

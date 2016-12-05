@@ -33,7 +33,7 @@ function createnumber(req, res){
  newprogress.save(function(err) {
    if (err) throw err;
   
-   res.redirect("/tasks");
+   res.redirect('progress');
  });
 }
 
